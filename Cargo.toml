@@ -1,6 +1,30 @@
-[package]
-name = "Electronics_pcb-rs"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    "shared",
+    "compiler",
+    "analyzer",
+    "firmware",
+]
 
-[dependencies]
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+
+
+
+
+
+
+
+
+
+
+#[package]
+#name = "Electronics_pcb-rs"
+#version = "0.1.0"
+#edition = "2024"
+
+#[dependencies]
