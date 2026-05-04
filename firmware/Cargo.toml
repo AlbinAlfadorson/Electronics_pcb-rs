@@ -4,3 +4,21 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+shared = { path =  "../shared" }
+
+# Для COrtex - R, M и прочих необходимых ARM
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+
+# Общие абстракции для переферии
+embedded-hal = "1.0"
+
+# Паника в условиях no_std
+panic-halt = "0.2.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+panic = "abort"
+
+
