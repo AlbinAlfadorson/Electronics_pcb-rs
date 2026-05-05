@@ -1,7 +1,9 @@
-
-
-
-
+[[Current_sense_resistor]]
+name = "Current_Sense_shunt" # Название компонента
+resistance_ohm = 0.0002 # 200 микроом
+tolerance_percent = 1.0 # Допустимая погрешность
+package = 5931 # Мощный корпус
+max_current_amp = 200 # максимальный ток в амперах, который шунт может пропускать через себя длительное время
 
 
 
