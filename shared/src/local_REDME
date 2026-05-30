@@ -19,4 +19,7 @@ lib.rs
 
 pub mod types;
 pub mod components;
-Почему: Без первой строки types.rs не виден снаружи. Без второй строки вся папка components/ не видна снаружи. lib.rs — это входная дверь в крейт
+Почему: Без первой строки types.rs не виден снаружи. Без второй строки вся папка components/ не видна снаружи. lib.rs — это входная дверь в крейт!
+
+library.toml  →  compiler  →  файл для KiCad (.kicad_pcb)  →  KiCad
+library.toml  →  compiler  →  файл для Renode (.repl)       →  Renode
