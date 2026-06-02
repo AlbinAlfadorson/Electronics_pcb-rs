@@ -1,3 +1,6 @@
+use serde::{Serialize, Deserialize}; 
+use crate::types::ComponentType;
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FlightControllerBoard 
     {
@@ -20,8 +23,8 @@ pub struct FlightControllerBoard
         pub thermal_via_pitch_mm: f64,
         pub max_current_amp: f64,
         pub max_temp_c: f64,
-        pub min_trace_width_mm: f64
-        pub min_clearance_mm: f64
+        pub min_trace_width_mm: f64,
+        pub min_clearance_mm: f64,
 
         
     }

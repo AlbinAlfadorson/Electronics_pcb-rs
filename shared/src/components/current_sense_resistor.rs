@@ -1,10 +1,13 @@
+use serde::{Serialize, Deserialize}; 
+use crate::types::ComponentType;
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CurrentSenseResistor 
     {
         pub component_type: ComponentType,
         pub name: String,
         pub resistance_ohm: f64,
-        pub tolerance_percen: f32,
+        pub tolerance_percen: f64,
         pub package: String,
         pub max_current_amp: f64,
         pub power_rating_watt: f64,
