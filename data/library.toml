@@ -60,27 +60,6 @@ min_trace_width_mm =  0.30
 # минимальный зазор между дорожками - Для меди 70 мкм стандартный минимальный зазор — тоже 0.20 мм. При меньшем зазоре на 2 oz меди возрастает риск образования "усов" при травлении и короткого замыкания. Особенно критично для силовой части, где у нас 200 А
 min_clearance_mm = 0.20
 #--------------------------------------------------------------------------------------------------------------------------------------------
+    
 
 
-
-[[Precision_detector_lamp]]
-name = "Precision Voltage Detector Lamp 3.698V"
-component_type = "precision_detector_lamp"
-# Напряжение, при котором лампа загорается (строго)
-trigger_voltage_v = 3.698
-# Допустимое отклонение от trigger_voltage_v, при котором лампа ещё горит
-tolerance_mv = 0.0
-# Состояние: горит только при U = trigger_voltage_v ± tolerance_mv
-trigger_mode = "exact_match"
-# Ниже trigger_voltage_v — не горит
-below_trigger_state = "off"
-# Выше trigger_voltage_v — не горит
-above_trigger_state = "off"
-# Потребляемый ток в режиме свечения
-current_draw_a = 10.0
-# Тип нагрузки
-load_type = "resistive"
-# Сопротивление в режиме свечения
-resistance_hot_ohm = 0.3698
-# Задержка включения для фильтрации ложных срабатываний
-debounce_ms = 1.0
