@@ -40,3 +40,7 @@
         └── local_REDME
 
 14 directories, 22 files
+
+
+Команда для проверки ключевых слов во всех файлах - то есть где и что содержится:
+find shared/ -name "*.rs" | xargs grep -l "LoadType"

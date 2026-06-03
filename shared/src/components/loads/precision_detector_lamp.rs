@@ -1,5 +1,5 @@
 use::serde::{Serialize, Deserialize};
-use crate::types::LoadType;
+use crate::enumes_for_components::loads::LoadType;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct PrecisionDetectorLamp 

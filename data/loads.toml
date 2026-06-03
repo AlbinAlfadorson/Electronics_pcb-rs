@@ -1,0 +1,21 @@
+[[Precision_detector_lamp]]
+name = "Precision Voltage Detector Lamp 3.698V"
+component_type = "precision_detector_lamp"
+# Напряжение, при котором лампа загорается (строго)
+trigger_voltage_v = 3.698
+# Допустимое отклонение от trigger_voltage_v, при котором лампа ещё горит
+tolerance_mv = 0.0
+# Состояние: горит только при U = trigger_voltage_v ± tolerance_mv
+trigger_mode = "exact_match"
+# Ниже trigger_voltage_v — не горит
+below_trigger_state = "off"
+# Выше trigger_voltage_v — не горит
+above_trigger_state = "off"
+# Потребляемый ток в режиме свечения
+current_draw_a = 10.0
+# Тип нагрузки
+load_type = "resistive"
+# Сопротивление в режиме свечения
+resistance_hot_ohm = 0.3698
+# Задержка включения для фильтрации ложных срабатываний
+debounce_ms = 1.0
