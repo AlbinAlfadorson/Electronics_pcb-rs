@@ -1,0 +1,42 @@
+Команда для создания этого днерева - tree -I "target" > project_tree.txt
+
+
+
+.
+├── analyzer
+│   ├── Cargo.toml
+│   └── src
+│       └── main.rs
+├── Cargo.lock
+├── Cargo.toml
+├── compiler
+│   ├── Cargo.toml
+│   └── src
+│       └── main.rs
+├── data
+│   ├── library.toml
+│   └── loads.toml
+├── firmware
+│   ├── Cargo.toml
+│   └── src
+│       └── main.rs
+├── output
+├── project_tree.txt
+└── shared
+    ├── Cargo.toml
+    └── src
+        ├── components
+        │   ├── current_sense_resistor.rs
+        │   ├── flight_controller_board.rs
+        │   ├── loads
+        │   │   ├── mod.rs
+        │   │   └── precision_detector_lamp.rs
+        │   └── mod.rs
+        ├── enumes_for_components
+        │   ├── loads.rs
+        │   ├── mod.rs
+        │   └── types.rs
+        ├── lib.rs
+        └── local_REDME
+
+14 directories, 22 files
