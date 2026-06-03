@@ -14,8 +14,8 @@ pub struct PrecisionDetectorLamp
     pub resistance_hot_ohm: f64,
     pub debounce_ms: f64,
     pub below_trigger_state: bool,
-    pub above_trigger_state: bool,
+    pub above_trigger_state: bool,   
 
-
+ 
 
 }
