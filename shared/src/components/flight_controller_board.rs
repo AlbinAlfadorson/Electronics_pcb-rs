@@ -1,5 +1,7 @@
-use serde::{Serialize, Deserialize}; 
-use crate::types::ComponentType;
+use serde::{Serialize, Deserialize};
+
+use crate::enumes_for_components; 
+use enumes_for_components::types::ComponentType;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FlightControllerBoard 
