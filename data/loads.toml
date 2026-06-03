@@ -8,9 +8,9 @@ tolerance_mv = 0.0
 # Состояние: горит только при U = trigger_voltage_v ± tolerance_mv
 trigger_mode = "exact_match"
 # Ниже trigger_voltage_v — не горит
-below_trigger_state = "off"
+below_trigger_state = false
 # Выше trigger_voltage_v — не горит
-above_trigger_state = "off"
+above_trigger_state = false
 # Потребляемый ток в режиме свечения
 current_draw_a = 10.0
 # Тип нагрузки
